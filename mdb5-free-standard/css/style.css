@@ -312,3 +312,15 @@ ul li::marker{
     font-weight: 500;
 }
 /*cards index.html page*/
+
+.Not_Found_Image{
+    width: 36%;
+    margin: auto;
+    display: block;
+    opacity: 0.8;
+}
+.Not_Found_Text{
+    font-size: 728%;
+    color: rgba(229, 143, 238, 0.9);
+    margin-top: 26px;
+}
