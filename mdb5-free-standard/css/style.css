@@ -167,6 +167,8 @@ color: rgba(229, 143, 238, 0.9);;
   color: #474545;
   letter-spacing: 2px;
   bottom: 2px;
+  color: white;
+  text-shadow: 2px 1px 1px black;
 }
 .p__grid {
   position: absolute;
@@ -177,6 +179,8 @@ color: rgba(229, 143, 238, 0.9);;
   letter-spacing: 2px;
   z-index: 3;
   bottom: 4px;
+  color: white;
+  text-shadow: 2px 1px 1px black;
 }
 
 /*style of image overlay end*/
@@ -266,6 +270,7 @@ color: rgba(229, 143, 238, 0.9);;
 }
 .Aboutus_Icon{
     font-size: 3rem;
+    color: rgba(229, 143, 238, 0.9);
 }
 .Big_ContactUs_Text{
     font-size: 4.5rem;
@@ -300,3 +305,10 @@ ul li::marker{
     padding-left: 0rem!important;
    }
 }
+
+/*cards index.html page*/
+.card-header{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/*cards index.html page*/
