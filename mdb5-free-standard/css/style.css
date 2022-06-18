@@ -154,33 +154,36 @@ color: rgba(229, 143, 238, 0.9);;
   color: #D176D9;
  /* transform: scale(1.05);*/
 }
-.grid__title {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  bottom: 0;
-  font-weight: 100;
-  font-size: 0.8em;
-  z-index: 3;
-  text-transform: uppercase;
-  color: #474545;
-  letter-spacing: 2px;
-  bottom: 2px;
-  color: white;
-  text-shadow: 2px 1px 1px black;
-}
 .p__grid {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  padding: 1em 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  z-index: 3;
-  bottom: 4px;
-  color: white;
-  text-shadow: 2px 1px 1px black;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #34b334;
+    margin: 0;
+}
+.grid__title {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 100;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #4e4a4a;
+    margin: 0;
+}
+.textPlace {
+    background-color: rgb(255 255 255 / 78%);
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    padding: 0.5em 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: 0px;
+    color: white;
 }
 
 /*style of image overlay end*/
@@ -324,3 +327,6 @@ ul li::marker{
     color: rgba(229, 143, 238, 0.9);
     margin-top: 26px;
 }
+
+
+/*updates*/
