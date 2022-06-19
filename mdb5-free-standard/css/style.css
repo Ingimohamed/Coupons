@@ -160,8 +160,8 @@ color: rgba(229, 143, 238, 0.9);;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
-    font-size: 26px;
-    color: #34b334;
+    font-size: 15px;
+    color: white;
     margin: 0;
 }
 .grid__title {
@@ -175,7 +175,7 @@ color: rgba(229, 143, 238, 0.9);;
     margin: 0;
 }
 .textPlace {
-    background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(255 255 255 / 0%) 100%);
+    background: #222020;
     position: absolute;
     text-align: left;
     width: 100%;
