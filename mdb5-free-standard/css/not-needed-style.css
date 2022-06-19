@@ -1,0 +1,191 @@
+.image_container{
+    position:relative;
+    width: 100%;
+}
+.image_overlay{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.overlay {
+   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(229, 143, 238, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.image_container:hover .overlay {
+   height: 100%;
+}
+
+.text_overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button_overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #D176D9;
+  transform: scale(1.05);
+}
+.p__grid {
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+.grid__title {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 100;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+.textPlace {
+    background: #222020;
+   /* position: absolute;
+    text-align: left;
+    width: 100%;*/
+    padding: 0.5em 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /*bottom: 0px;*/
+    color: white;
+}
+
+
+/*new stye images overlay first section in index.html - start*/
+.image_container_1{
+        width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 254px;
+}
+.image_container_2{
+        width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 254px;
+}
+.image_container_3{
+        width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 254px;
+}
+.overlay_1{
+  background-image: linear-gradient(0deg, rgba(229, 143, 238, 0.6), rgba(229, 143, 238, 0.6));
+  background-color: rgba(229, 143, 238, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+   justify-items: center;
+  align-items: center;
+
+ 
+  z-index:3;
+}
+
+.image_container_1:hover .overlay_1{
+ background-image: linear-gradient(0deg, rgba(229, 143, 238, 0.6), rgba(229, 143, 238, 0.6));
+  width: 100%;
+  height: 254px;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(0%);
+}
+.image_container_2:hover .overlay_1{
+ background-image: linear-gradient(0deg, rgba(229, 143, 238, 0.6), rgba(229, 143, 238, 0.6));
+  width: 100%;
+  height: 254px;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(0%);
+}
+.image_container_3:hover .overlay_1{
+ background-image: linear-gradient(0deg, rgba(229, 143, 238, 0.6), rgba(229, 143, 238, 0.6));
+  width: 100%;
+  height: 254px;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(0%);
+}
+
+.button_overlay_1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay_1 button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.overlay_1 button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #D176D9;
+  /*transform: scale(1.05);*/
+}
+/*new stye images overlay first section in index.html - end*/

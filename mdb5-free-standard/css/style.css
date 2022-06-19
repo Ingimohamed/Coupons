@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-
+:root{
+    --mainVioletColor: rgba(229, 143, 238, 0.9);
+}
 body {
   font-family: "Inconsolata", monospace;
   margin: 0;
@@ -42,24 +44,24 @@ body {
     color: #686767;
 }
 .bg-light {
-    background-color: rgba(229, 143, 238, 0.9)!important;
+    background-color:var(--mainVioletColor)!important;
 }
 
 h1{
     color: #686767;
 }
 .form-check-input[type=checkbox]:checked{
-    background-color: rgba(229, 143, 238, 0.9);
+    background-color: var(--mainVioletColor);
 }
 .form-check-input:checked {
-    border-color: rgba(229, 143, 238, 0.9);
+    border-color: var(--mainVioletColor);
 }
 
 .form-check-input:checked:focus {
-    border-color: rgba(229, 143, 238, 0.9);
+    border-color: var(--mainVioletColor);
 }
 .form-check-input[type=checkbox]:checked:focus {
-    background-color: rgba(229, 143, 238, 0.9);
+    background-color: var(--mainVioletColor);
 }
 
 .Btn_Padding{
@@ -67,7 +69,7 @@ padding: 0px;
 }
 
 .Btn_Style{
-   background: rgba(229, 143, 238, 0.9);
+   background: var(--mainVioletColor);
     outline: none;
     font-weight: 100;
     letter-spacing: 2px;
@@ -81,114 +83,16 @@ padding: 0px;
 .Btn_Style:hover{
     transition: all 0.3s ease-in-out;
     background: #ffffff;
-    color:rgba(229, 143, 238, 0.9);
+    color:var(--mainVioletColor);
     transform: scale(1.05);
-    border: 1px solid rgba(229, 143, 238, 0.9);
+    border: 1px solid var(--mainVioletColor);
 }
 .page-item.active .page-link{
-    background: rgba(229, 143, 238, 0.9);
+    background: var(--mainVioletColor);
 }
 .violet-color{
-color: rgba(229, 143, 238, 0.9);;
+color: var(--mainVioletColor);;
 }
-
-/*style of image overlay*/
-.image_container{
-    position:relative;
-    width: 100%;
-}
-.image_overlay{
-    display:block;
-    width:100%;
-    height:auto;
-}
-.overlay {
-   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(229, 143, 238, 0.9);;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-.image_container:hover .overlay {
-   height: 100%;
-}
-
-.text_overlay {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.button_overlay{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay button {
-  background: none;
-  outline: none;
-  font-weight: 100;
-  letter-spacing: 2px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 10px;
-}
-.overlay button:hover {
-  transition: all 0.3s ease-in-out;
-  background: #ffffff;
-  color: #D176D9;
- /* transform: scale(1.05);*/
-}
-.p__grid {
-    text-align: left;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 15px;
-    color: white;
-    margin: 0;
-}
-.grid__title {
-    width: 100%;
-    text-align: left;
-    white-space: nowrap;
-    font-weight: 100;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: white;
-    margin: 0;
-}
-.textPlace {
-    background: #222020;
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    padding: 0.5em 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    bottom: 0px;
-    color: white;
-}
-
-/*style of image overlay end*/
-
-
 
 /*--------------*/
 /*gallery images start*/
@@ -255,7 +159,7 @@ color: rgba(229, 143, 238, 0.9);;
 /*gallery images end*/
 
 .hr{
-    color: rgba(229, 143, 238, 0.9);
+    color: var(--mainVioletColor);
     height: 2px;
     width: 90px;
     display: block;
@@ -273,22 +177,22 @@ color: rgba(229, 143, 238, 0.9);;
 }
 .Aboutus_Icon{
     font-size: 3rem;
-    color: rgba(229, 143, 238, 0.9);
+    color: var(--mainVioletColor);
 }
 .Big_ContactUs_Text{
     font-size: 4.5rem;
     line-height: 1;
     font-weight: bolder;
-    color: rgba(229, 143, 238, 0.9)!important;
+    color: var(--mainVioletColor)!important;
 }
 ul li::marker{
-    color:rgba(229, 143, 238, 0.9);
+    color:var(--mainVioletColor);
 }
 .form-outline .form-control:focus~.form-label {
-    color:rgba(229, 143, 238, 0.9);
+    color:var(--mainVioletColor);
 }
 .form-control:focus{
-    border-color:rgba(229, 143, 238, 0.9)!important;
+    border-color:var(--mainVioletColor)!important;
 }
 
 /*responsive mobile*/
@@ -308,6 +212,12 @@ ul li::marker{
     padding-left: 0rem!important;
    }
 }
+@media only screen and (max-width: 1000px) {
+     .Heading_Padding{
+       padding: 0px 50px 0px 50px!important;
+    }
+}
+/*responsive mobile end*/
 
 /*cards index.html page*/
 .card-header{
@@ -324,7 +234,7 @@ ul li::marker{
 }
 .Not_Found_Text{
     font-size: 728%;
-    color: rgba(229, 143, 238, 0.9);
+    color: var(--mainVioletColor);
     margin-top: 26px;
 }
 .card-footer {
