@@ -171,11 +171,11 @@ color: rgba(229, 143, 238, 0.9);;
     font-weight: 100;
     font-size: 26px;
     text-transform: uppercase;
-    color: #4e4a4a;
+    color: white;
     margin: 0;
 }
 .textPlace {
-    background-color: rgb(255 255 255 / 78%);
+    background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(255 255 255 / 0%) 100%);
     position: absolute;
     text-align: left;
     width: 100%;
