@@ -327,6 +327,8 @@ ul li::marker{
     color: rgba(229, 143, 238, 0.9);
     margin-top: 26px;
 }
-
+.card-footer {
+     border-top: none; 
+}
 
 /*updates*/
