@@ -330,5 +330,7 @@ ul li::marker{
 .card-footer {
      border-top: none; 
 }
-
+.card .bg-image {
+    height: 177px;
+}
 /*updates*/
