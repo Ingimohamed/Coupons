@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-:root{
-    --mainVioletColor: rgba(229, 143, 238, 0.9);
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 :root{
     --mainColor: #893976;
@@ -190,15 +188,12 @@ color: var(--mainVioletColor);;
 .Heading_Padding{
     padding: 0px 209px 0px 209px;
 }
-.Ad_Fram{
-
+.main-color{
+    color:var(--mainColor);
+    font-weight: 600;
 }
 .Post_Ad_Padding{
     padding-top: 98px;
-}
-.Aboutus_Icon{
-    font-size: 3rem;
-    color: var(--mainVioletColor);
 }
 .Big_ContactUs_Text{
     font-size: 4.5rem;
@@ -207,14 +202,151 @@ color: var(--mainVioletColor);;
     color: var(--mainVioletColor)!important;
 }
 ul li::marker{
-    color:var(--mainVioletColor);
+    color:var(--mainColor);
 }
 .form-outline .form-control:focus~.form-label {
-    color:var(--mainVioletColor);
+    color:var(--mainColor);
 }
-.form-control:focus{
-    border-color:var(--mainVioletColor)!important;
+
+/* send to Ammar input style start */
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+    margin: 0 0 1em;
+    padding: .33em .75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    resize: none;
+    outline: none;
+  }
+  input[type="text"][required]:focus {
+    border-color:var(--mainColor);
+  }
+  input[type="text"][required]:focus + label[placeholder]:before {
+    color: var(--mainColor);
+  }
+  input[type="text"][required]:focus + label[placeholder]:before,
+  input[type="text"][required]:valid + label[placeholder]:before {
+    transition-duration: 0.2s;
+    transform: translate(0, -1.5em) scale(0.9, 0.9);
+  }
+  input[type="text"][required]:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+    background-color: var(--background);
+  }
+  input[type="text"][required] + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1.9em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc((3em - 1em) + 2px);
+  }
+  input[type="text"][required] + label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }  
+  /*text area*/
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+    margin: 0 0 1em;
+    padding: .33em .75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    resize: none;
+    outline: none;
+  }
+  textarea:focus{
+    border-color:var(--mainColor);
+  }
+  textarea:focus + label[placeholder]::before{
+    color: var(--mainColor);
+  }
+  textarea:focus + label[placeholder]::before,
+  textarea:valid + label[placeholder]::before{
+    transition-duration: 0.2s;
+    transform: translate(0, -1.5em) scale(0.9, 0.9);
+  }
+  textarea:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+    background-color: var(--background);
+  }
+  textarea + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1.9em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc((3em - 1em) + 2px);
+  }
+  textarea + label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }  
+
+  /* Modern Browsers */
+textarea::placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* WebKit, Edge */
+textarea::-webkit-input-placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Firefox 4-18 */
+textarea:-moz-placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Firefox 19+ */
+textarea::-moz-placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* IE 10-11 */
+textarea:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Edge */
+textarea::-ms-input-placeholder {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+}
+/* send to Ammar input style end */
 
 /*cards index.html page*/
 .card-header{
