@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+:root{
+    --mainColor: #893976;
+    --lightMainColor: #964a84;
+    --title: #AE9D95;
+    --paragraph: #d5d3f6;
+    --background: #f4f7fa;
+    --differentColor:#fd7da4;
+    --lightDifferentColor: #feb5c9;
+    --transparentMainColor: #893976de;
+    --transparentTitleColor: #414887;
+    --transparentParagraphColor: #d5d3f6dc;
+    --transparentLightMainColor: rgba(137, 57, 118, 0.363)
+}
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: #F2EEE8;
-    font-family: "Open Sans";
+    background-color: var(--background);
+    color: #7a686a;
+    font-family: "Inconsolata", monospace;
   }
   
   *, *:before, *:after {
@@ -38,7 +53,7 @@ html, body {
   .face .band .red {
     height: calc(100% / 3);
     width: 100%;
-    background-color: #EB6D6D;
+    background-color: var(--mainColor);
   }
   .face .band .white {
     height: calc(100% / 3);
@@ -48,7 +63,7 @@ html, body {
   .face .band .blue {
     height: calc(100% / 3);
     width: 100%;
-    background-color: #5E7FDC;
+    background-color: var(--transparentTitleColor);
   }
   .face .band:before {
     content: "";
@@ -145,11 +160,12 @@ html, body {
   }
   
   .btn {
-    font-family: "Open Sans";
+    font-family: "Inconsolata", monospace;
     font-weight: 400;
     padding: 20px;
-    background-color: #5e7fdc;
-    color: white;
+    background: var(--mainColor);
+    color: var(--background);
+    text-transform: uppercase;
     width: 320px;
     margin: 0 auto;
     text-align: center;
@@ -169,6 +185,6 @@ html, body {
     }
   }
   .btn:hover {
-    background-color: rgba(94, 127, 220, 0.8);
-    transition: all 0.2s linear;
+    background: var(--lightMainColor);
+    transform: scale(1.05);
   }
