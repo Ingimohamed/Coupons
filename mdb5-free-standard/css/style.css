@@ -255,6 +255,10 @@ opacity:0.5;
   .New_Line{
     display: block;
     position: absolute;
+    bottom: 147px;
+    font-size: 20px;
+    left: 0;
+    right: 0;
   }
   
   .circles { 
