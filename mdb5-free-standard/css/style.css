@@ -220,9 +220,13 @@ input[type="text"] {
     background: transparent;
     resize: none;
     outline: none;
+    color: var(--mainColor);
+    box-shadow: 2px 2px 4px #c7c7c7;
   }
   input[type="text"][required]:focus {
-    border-color:var(--mainColor);
+    border: 2px solid var(--mainColor);
+    border-color: var(--mainColor);
+    transition: 0.1s ease-in-out;
   }
   input[type="text"][required]:focus + label[placeholder]:before {
     color: var(--mainColor);
@@ -230,7 +234,8 @@ input[type="text"] {
   input[type="text"][required]:focus + label[placeholder]:before,
   input[type="text"][required]:valid + label[placeholder]:before {
     transition-duration: 0.2s;
-    transform: translate(0, -1.5em) scale(0.9, 0.9);
+    transform: translate(0, -1.3em) scale(0.9, 0.9);
+    background: var(--background);
   }
   input[type="text"][required]:invalid + label[placeholder][alt]:before {
     content: attr(alt);
@@ -268,9 +273,13 @@ input[type="text"] {
     background: transparent;
     resize: none;
     outline: none;
+    color: var(--mainColor);
+    box-shadow: 2px 2px 4px #c7c7c7;
   }
   textarea:focus{
-    border-color:var(--mainColor);
+    border: 2px solid var(--mainColor);
+    border-color: var(--mainColor);
+    transition: 0.1s ease-in-out;
   }
   textarea:focus + label[placeholder]::before{
     color: var(--mainColor);
