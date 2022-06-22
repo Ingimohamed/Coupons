@@ -288,8 +288,8 @@ input[type="text"] {
     display: block;
     pointer-events: none;
     line-height: 1.9em;
-    margin-top: calc(-3em - 2px);
-    margin-bottom: calc((3em - 1em) + 2px);
+    margin-top: calc(-9.6em - 2px);
+    margin-bottom: calc((9.6em - 1em) + 2px);
   }
   textarea + label[placeholder]:before {
     content: attr(placeholder);
